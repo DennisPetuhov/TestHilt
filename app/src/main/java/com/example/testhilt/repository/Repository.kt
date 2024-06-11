@@ -73,9 +73,9 @@ class MyNewRepository @Inject constructor( val ioDispatcher: CoroutineDispatcher
 
 
   override  suspend fun fetchData(): String = withContext(ioDispatcher) {
-        require(initialized.get()) { "Repository should be initialized first" }
-        delay(500L)
-        println("*** Data from MYNEW repository")
+//        require(initialized.get()) { "Repository should be initialized first" }
+//        delay(500L)
+        println("!!! Data from MYNEW repository")
         "Data from MYNEW repository"
     }
 
